@@ -1,0 +1,20 @@
+[PROJECT]
+Target=teclado_matricial.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.007
+Compiler=PCH
+[Target Data]
+FileList=teclado_matricial.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Users\Thiago\Documents\CCS C Projects\Teclado\Teclado\
+[teclado_matricial.c]
+Type=4
+[mru-list]
+1=teclado_matricial.c
+[Opened Files]
+1=teclado_matricial.c
+2=12Keys.c
+3=
+[Units]
+Count=1
+1=teclado_matricial (main)

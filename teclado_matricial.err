@@ -1,0 +1,4 @@
+>>> Warning 202 "teclado_matricial.c" Line 11(9,13): Variable never used:   flag
+      Memory usage:   ROM=2%      RAM=1% - 1%
+      0 Errors,  1 Warnings.
+Build Successful.

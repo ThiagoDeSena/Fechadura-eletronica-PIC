@@ -1,0 +1,40 @@
+#define vermelho pin_d2
+#define amarelo pin_d0
+#define verde pin_d1
+#include<18F4550.h>
+#use delay (clock=20000000)        
+#fuses HS,PLL5, CPUDIV1, USBDIV
+#use rs232(baud=9600, xmit = PIN_C6, rcv = PIN_C7)
+#include "12Keys.c"
+
+boolean flag;
+char senhaDigitada[5];
+int contador = 0;
+
+
+void main()
+ {
+  port_b_pullups(True);
+  
+    
+  tecla_pres=0;
+   
+  while(TRUE)
+              {
+               tecla = trata_teclas();
+               if (tecla_pres){
+                  //printf("%c",tecla); 
+                  
+                  senhaDigitada[contador] = tecla;
+                  printf("%c",senhaDigitada[contador]);
+                  contador++;
+                  
+                  if(tecla == '#'){
+                     output_high(verde);
+                  }else if(tecla == '*'){
+                     output_low(verde);
+                  }
+               }
+               
+}
+}

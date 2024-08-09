@@ -1,0 +1,51 @@
+
+ROM used:   516/16384 (2%)
+            516/16384 (2%) including unused fragments
+
+            0.4 Average locations per line
+            2.5 Average locations per statement
+
+RAM used:   19/2048 (1%) at main() level
+            20/2048 (1%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   60    26  13  teclado_matricial.c
+  821     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.h
+   69    54  26  12Keys.c
+  423   125  61  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+----- -----
+ 1433   205 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   4    1             @delay_ms1
+0    214  21    1  1435  3.4  varre_teclas
+0     50   5    2   334  3.3  trata_teclas
+0    210  20    1   694  7.5  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              205
+    Comments                297
+    Volume (V)              3029
+    Difficulty (D)          15.1
+    Effort to implement (E) 45719
+    Time to implement (T)   42 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   23
+    Maintainability (MI)    79
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   512  32252  
+
+
+
